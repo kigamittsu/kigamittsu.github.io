@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    background: #ddd url(./images/avalanche-2518679_1920.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.container {
+    padding: 15px;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-content: center;
+    justify-content: center;
+}
+
+#left{
+    margin: 5px;
+    padding: 5px;
+    grid-row: 2;
+    grid-column: 1;
+    background-color: whitesmoke;
+}
+
+#center {
+    margin: 5px;
+    padding: 5px;
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    background-color: whitesmoke;
+}
+
+#image > img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#right {
+    margin: 5px;
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#right > img {
+    max-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
